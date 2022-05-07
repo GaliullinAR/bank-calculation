@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кредитный калькулятор</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="credit">
+      <h1 class="title">
+        Расчитайте кредит
+      </h1>
+      <div class="credit__inner">
+        <div class="credit-content-left">
+          <div class="input-content-box">
+            <div class="input-wrapper">
+              <h3 class="input-title">
+                Стоимость товара
+              </h3>
+              <div class="input">
+                <input type="number" id="total-cost" value="0">
+              </div>
+              <div class="input">
+                <input type="range" min="0" max="10000000" id="total-cost-range" value="0">
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <h3 class="input-title">
+                Первоначальный взнос
+              </h3>
+              <div class="input">
+                <input type="number" id="an-initial-fee" value="0">
+              </div>
+              <div class="input">
+                <input type="range" min="0" max="10000000" id="an-initial-fee-range" value="0">
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <h3 class="input-title">
+                Срок кредита
+              </h3>
+              <div class="input">
+                <input type="number" id="credit-term" value="0">
+              </div>
+              <div class="input">
+                <input type="range" min="1" max="5" value="0">
+              </div>
+            </div>
+          </div>
+          <div class="button-content-box">
+            <h2 class="button-title">
+              Выбрать банк
+            </h2>
+            <div class="button-content-box-body">
+              <button data-name="alfa" class="bank active">
+                <div class="text">Альфа-банк</div>
+                <div class="value">8,7%</div>
+              </button>
+              <button data-name="sberbank" class="bank">
+                <div class="text">Сбербанк</div>
+                <div class="value">8,4%</div>
+              </button>
+              <button data-name="alfa" class="bank active">
+                <div class="text">Почта-банк</div>
+                <div class="value">7,9%</div>
+              </button>
+              <button data-name="alfa" class="bank active">
+                <div class="text">Тинькофф-банк</div>
+                <div class="value">9,2%</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="credit-content-rigth">
+          <div class="final-result-wrapper">
+            <div class="final-result-item">
+              <div class="item-title">
+                Сумма кредита
+              </div>
+              <div class="item-value" id="monphly-payment">0<span>P</span></div>
+            </div>
+            <div class="final-result-item">
+              <div class="item-title">
+                Ежемесячный платеж
+              </div>
+              <div class="item-value" id="monphly-payment">0<span>P</span></div>
+            </div>
+            <div class="final-result-item">
+              <div class="item-title">
+                Рекомендуемый доход
+              </div>
+              <div class="item-value" id="monphly-payment">0<span>P</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
