@@ -28,7 +28,7 @@
                 <input type="number" id="total-cost" value="0">
               </div>
               <div class="input">
-                <input type="range" min="0" max="10000000" id="total-cost-range" value="0">
+                <input type="range" class="input-range" min="0" max="10000000" id="total-cost-range" value="0">
               </div>
             </div>
             <div class="input-wrapper">
@@ -39,7 +39,7 @@
                 <input type="number" id="an-initial-fee" value="0">
               </div>
               <div class="input">
-                <input type="range" min="0" max="10000000" id="an-initial-fee-range" value="0">
+                <input type="range" class="input-range" min="10000" max="10000000" id="an-initial-fee-range" value="0">
               </div>
             </div>
             <div class="input-wrapper">
@@ -50,7 +50,7 @@
                 <input type="number" id="credit-term" value="0">
               </div>
               <div class="input">
-                <input type="range" min="1" max="5" value="0">
+                <input type="range" class="input-range" id="credit-term-range" min="1" max="5" value="0">
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@
               <div class="item-title">
                 Сумма кредита
               </div>
-              <div class="item-value" id="monphly-payment">0<span>P</span></div>
+              <div class="item-value" id="amount-of-credit">0<span>P</span></div>
             </div>
             <div class="final-result-item">
               <div class="item-title">
@@ -96,7 +96,7 @@
               <div class="item-title">
                 Рекомендуемый доход
               </div>
-              <div class="item-value" id="monphly-payment">0<span>P</span></div>
+              <div class="item-value" id="recommended-income">0<span>P</span></div>
             </div>
           </div>
         </div>
