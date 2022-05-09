@@ -60,7 +60,7 @@ for (let bank of bankBtns) {
 
 const takeActiveBank = (currentActive) => {
   const dataAttrValue = currentActive.dataset.name; 
-  const currentBank = banks.find( bank => bank.name === dataAttrValue );
+  const currentBank = banks.find(bank => bank.name === dataAttrValue);
   currentPrecent = currentBank.precents;
   calculation(totalCost.value, anInitialFee.value, creditTerm.value);
 }

@@ -24,10 +24,6 @@ body {
   height: 100%;
 }
 
-.credit {
-  height: 100%;
-}
-
 .title {
   font-size: 36px;
   font-weight: 600;
@@ -37,7 +33,6 @@ body {
 .credit__inner {
   display: flex;
   align-items: flex-start;
-  height: 100%;
   width: 100%;
   border-top: 2px solid #c4c4c4;
 }
@@ -111,6 +106,7 @@ input[type="range"] {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   border: 1px solid #c4c4c4;
   width: 100%;
   padding: 12px 20px;
@@ -141,4 +137,23 @@ input[type="range"] {
 .item-value {
   font-size: 24px;
   font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 24px;
+    text-align: center;
+  }
+  .button-content-box {
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .bank {
+    width: 100%;
+  }
 }
